@@ -1,0 +1,16 @@
+name: Trigger on File Change
+
+on:
+  push:
+    paths:
+      - 'inputs/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Example step
+        run: echo "A file in the inputs folder was changed!"
