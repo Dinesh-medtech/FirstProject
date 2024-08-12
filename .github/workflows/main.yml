@@ -3,7 +3,7 @@ name: Trigger on File Change
 on:
   push:
     paths:
-      - 'input/**'
+      - 'input/test.txt'
 
 jobs:
   build:
